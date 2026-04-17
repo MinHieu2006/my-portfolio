@@ -1,5 +1,6 @@
-<a href="{{ if $.Site.Params.Logo.LogoHomeLink }}{{ $.Site.Params.Logo.LogoHomeLink }}{{else}}{{ $.Site.BaseURL }}{{ end }}">
-  <div class="logo">
-    {{ with $.Site.Params.Logo.logoText }}{{ . }}{{ else }}Terminal{{ end }}
+<a href="{{ if $.Site.Params.logo.logoHomeLink }}{{ $.Site.Params.logo.logoHomeLink }}{{else}}{{ $.Site.BaseURL }}{{ end }}" class="logo-container">
+  <div class="logo-box">
+    {{ with $.Site.Params.logo.logoText }}{{ . }}{{ else }}luis.zip{{ end }}
   </div>
+  <div class="logo-barcode"></div>
 </a>

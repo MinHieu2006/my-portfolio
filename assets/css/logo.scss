@@ -1,8 +1,9 @@
 .logo {
-  display: flex;
-  align-items: center;
   text-decoration: none;
-  background: $accent;
-  color: black;
-  padding: 5px 10px;
+  color: $color;
+  
+  &:hover {
+    color: $accent;
+    text-decoration: none;
+  }
 }

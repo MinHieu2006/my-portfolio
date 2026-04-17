@@ -1,1 +1,303 @@
-// To override in project
+// Override styles to match luis.zip visual spec
+body {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  font-family: 'Space Mono', 'Roboto Mono', monospace !important;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Layout */
+.header {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 40px !important;
+  border-bottom: none !important;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111111;
+  flex-grow: 1;
+}
+
+.logo-box {
+  background-color: #e9d5c3;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid #333;
+  white-space: nowrap;
+}
+
+.logo-barcode {
+  height: 50px;
+  flex-grow: 1;
+  background: repeating-linear-gradient(
+    to right,
+    #ff8c00,
+    #ff8c00 2px,
+    transparent 2px,
+    transparent 6px
+  );
+  margin-left: 8px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation-menu__inner {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu__inner a {
+  text-decoration: none;
+  color: #555555;
+}
+
+.navigation-menu__inner a:hover {
+  color: #111111;
+}
+
+.menu--language-selector {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.dropdown-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 15px; /* bridges the gap */
+}
+
+.menu__trigger {
+  color: #555555;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.menu__trigger:hover,
+.dropdown-container:hover .menu__trigger {
+  color: #111111;
+}
+
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  min-width: 120px;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown-container:hover .menu__dropdown {
+  display: block;
+}
+
+.menu__dropdown li {
+  margin-bottom: 5px;
+}
+
+.menu__dropdown li:last-child {
+  margin-bottom: 0;
+}
+
+.menu__dropdown a {
+  text-decoration: none;
+  color: #555555;
+  display: block;
+}
+
+.menu__dropdown a:hover {
+  color: #111111;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-avatar-wrapper {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    45deg,
+    #f9a826,
+    #f9a826 10px,
+    #ffffff 10px,
+    #ffffff 20px
+  );
+  border: 1px solid #e9d5c3;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-handle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  color: #111111;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0 0 15px;
+  color: #555555;
+}
+
+.profile-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.profile-socials img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+.profile-socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Content Boxes */
+.content-box {
+  background-color: #e9d5c3;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  color: #111111;
+  border: 2px solid transparent;
+}
+
+.intro-box {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.intro-box p {
+  margin: 0;
+}
+
+/* Post List / Project List */
+.post-item-link {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.post-item-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.2s ease, border 0.2s ease;
+  background-color: #e9d5c3 !important; /* ensure override */
+}
+
+.post-item-box:hover {
+  transform: translateY(-2px);
+  border: 2px solid #333333;
+}
+
+.post-item-icon img {
+  width: 40px;
+  height: 40px;
+  image-rendering: pixelated;
+}
+
+.post-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #111111;
+}
+
+.post-item-meta {
+  font-size: 0.9rem;
+  color: #555555;
+  margin: 0;
+}
+
+/* Pixel Art Character */
+.pixel-art-character {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  animation: bounce 2s infinite ease-in-out;
+  z-index: 1000;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Cleanup standard theme colors */
+.post.on-list {
+  border-top: none;
+  padding: 0;
+}
+.post-title {
+  margin: 0;
+}

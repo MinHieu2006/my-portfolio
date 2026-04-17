@@ -1,4 +1,98 @@
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = '0.90.0'
+baseurl = "https://example.com/"
+defaultContentLanguage = "en"
+paginate = 5
+
+[params]
+  showLanguageSelector = true
+  contentTypeName = "posts"
+  themeColor = "orange"
+  showMenuItems = 3
+  fullWidthTheme = false
+  centerTheme = true
+
+[languages]
+  [languages.en]
+    title = "My personal portfolio"
+    subtitle = "An unzipped digital garden"
+    languageName = "English"
+    weight = 1
+    
+    [languages.en.params.logo]
+      logoText = "Minh Hieu"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "portfolio"
+        name = "Portfolio"
+        url = "/portfolio"
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "linklist"
+        name = "Link List"
+        url = "/link-list"
+        weight = 3
+
+  [languages.vi]
+    title = "luis.zip phong cách"
+    subtitle = "Khu vườn kỹ thuật số"
+    languageName = "Tiếng Việt"
+    weight = 2
+
+    [languages.vi.params.logo]
+      logoText = "Minh Hiếu"
+      logoHomeLink = "/vi/"
+
+    [languages.vi.menu]
+      [[languages.vi.menu.main]]
+        identifier = "portfolio"
+        name = "Dự án"
+        url = "/vi/portfolio"
+        weight = 1
+      [[languages.vi.menu.main]]
+        identifier = "about"
+        name = "Về tôi"
+        url = "/vi/about"
+        weight = 2
+      [[languages.vi.menu.main]]
+        identifier = "linklist"
+        name = "Liên kết"
+        url = "/vi/link-list"
+        weight = 3
+
+  [languages.fr]
+    title = "luis.zip style"
+    subtitle = "Un jardin numérique dézippé"
+    languageName = "Français"
+    weight = 3
+
+    [languages.fr.params.logo]
+      logoText = "Minh Hieu"
+      logoHomeLink = "/fr/"
+
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        identifier = "portfolio"
+        name = "Portefeuille"
+        url = "/fr/portfolio"
+        weight = 1
+      [[languages.fr.menu.main]]
+        identifier = "about"
+        name = "À propos"
+        url = "/fr/about"
+        weight = 2
+      [[languages.fr.menu.main]]
+        identifier = "linklist"
+        name = "Liens"
+        url = "/fr/link-list"
+        weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
