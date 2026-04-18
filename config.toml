@@ -2,6 +2,8 @@ baseurl = "https://example.com/"
 defaultContentLanguage = "en"
 paginate = 5
 
+
+
 [params]
   showLanguageSelector = true
   contentTypeName = "posts"

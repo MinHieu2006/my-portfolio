@@ -4,7 +4,14 @@
       {{ partial "logo.html" . }}
     </div>
   </div>
+  <div class="social-icons">
+        <a href="https://github.com/MinHieu2006" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://tryhackme.com/p/luongminhhieu303" target="_blank" title="TryHackMe"><i class="fas fa-terminal"></i></a>
+        <a href="https://www.linkedin.com/in/luong-minh-hieu-453679249/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:luongminhhieu303@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   {{ if len $.Site.Menus }}
     {{ partial "menu.html" . }}
   {{ end }}
+  
 </header>
