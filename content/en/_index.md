@@ -1,5 +1,6 @@
 +++
 title = "Home"
+portfolioCover = "/img/minh-hieu.jpg"
 +++
 
 <div class="hero" style="margin-bottom: 3em;">

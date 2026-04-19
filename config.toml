@@ -14,6 +14,7 @@ paginate = 5
 
 [languages]
   [languages.en]
+    contentDir = "content/en"
     title = "My personal portfolio"
     subtitle = "An unzipped digital garden"
     languageName = "English"
@@ -21,26 +22,27 @@ paginate = 5
     
     [languages.en.params.logo]
       logoText = "Minh Hieu"
-      logoHomeLink = "/"
+      logoHomeLink = "/en/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "portfolio"
         name = "Portfolio"
-        url = "/portfolio"
+        url = "/en/portfolio"
         weight = 1
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = "/en/about"
         weight = 2
       [[languages.en.menu.main]]
         identifier = "linklist"
         name = "Link List"
-        url = "/link-list"
+        url = "/en/link-list"
         weight = 3
 
   [languages.vi]
+    contentDir = "content/vi"
     title = "luis.zip phong cách"
     subtitle = "Khu vườn kỹ thuật số"
     languageName = "Tiếng Việt"
@@ -68,6 +70,7 @@ paginate = 5
         weight = 3
 
   [languages.fr]
+    contentDir = "content/fr"
     title = "luis.zip style"
     subtitle = "Un jardin numérique dézippé"
     languageName = "Français"
