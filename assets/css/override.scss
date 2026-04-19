@@ -199,16 +199,20 @@ body {
 .profile-socials {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+  margin-top: 15px;
 }
 
-.profile-socials img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.2s ease;
+.profile-socials a {
+  font-size: 40px;         
+  color: #ffb86c;          
+  transition: transform 0.2s ease, opacity 0.2s;
+  text-decoration: none !important;
 }
-.profile-socials img:hover {
-  transform: scale(1.1);
+
+.profile-socials a:hover {
+  transform: scale(1.2);  
+  opacity: 0.8;
 }
 
 /* Content Boxes */

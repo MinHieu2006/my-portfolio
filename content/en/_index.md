@@ -1,6 +1,6 @@
 +++
 title = "Home"
-portfolioCover = "static/img/minh-hieu.jpg"
+portfolioCover = "/img/minh-hieu.jpg"
 +++
 
 <div class="hero" style="margin-bottom: 3em;">
